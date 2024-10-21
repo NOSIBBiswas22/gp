@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.converter {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Center the content in the converter */
+}
+
+.converter h2 {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #555;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 145px; /* Wider for better display */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    min-height: 40px; /* Ensure buttons have a minimum height */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#gramResult, #voriResult, #goldPriceResult, #goldPriceResultVori {
+    padding: 3px;
+    font-size: 1.3em; /* Increased font size */
+    font-weight: bold;
+    color: #37404f; /* Darker text color */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    background-color: #ede8e8;
+    font-size: 0.9em;
+    color: #110f0f;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .converter {
+        padding: 15px;
+        text-align: center; /* Ensure the text is centered */
+    }
+
+    form {
+        flex-direction: column; /* Stack input fields vertically */
+        align-items: center; /* Center align items */
+    }
+
+    label {
+        text-align: center; /* Center align labels */
+    }
+
+    h1, h2 {
+        font-size: 1.65em; /* Adjust font size for smaller screens */
+    }
+
+    input[type="number"] {
+        width: 90%; /* Take more width on smaller screens */
+    }
+
+    button {
+        width: 90%; /* Button full width on smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px; /* Reduce padding for very small screens */
+        width: 95%; /* Take more width on very small screens */
+        margin: 10px auto; /* Center with smaller margins */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Further adjust h2 sizes */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller paragraph text */
+    }
+}

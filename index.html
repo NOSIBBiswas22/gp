@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Coding by Nosib Biswas -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Calculator || Nosib Biswas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>GOLD CANCULATOR</h1>
+        <div class="info">
+            <h2>Information of Gold</h2>
+            <p>1 Vori = 11.664 Gram</p>
+            <p>1 Vori = 16 Ana = 96 Roti = 960 Point</p>
+            <p>1 Ana = 6 Roti = 60 Point</p>
+            <p>1 Roti = 10 Point</p>
+        </div>
+
+        <!-- Gold Price Input -->
+        <div class="converter">
+            <h2>Enter Gold Price</h2>
+            <form id="goldPriceForm">
+                <label for="goldPricePerGram">Price per Gram </label>
+                <input type="number" id="goldPricePerGram" placeholder="Gold Price per Gram" value="12008">
+
+                <label for="goldPricePerVori">Price per Vori </label>
+                <input type="number" id="goldPricePerVori" placeholder="Gold Price per Vori" value="140061">
+            </form>
+        </div>
+
+        <!-- Vori, Ana, Roti, Point to Gram Converter -->
+        <div class="converter">
+            <h2>Vori, Ana, Roti, Point to Gram Converter</h2>
+            <form id="toGramForm">
+                <input type="number" id="vori" placeholder="Vori" value="1">
+                <input type="number" id="ana" placeholder="Ana" value="0">
+                <input type="number" id="roti" placeholder="Roti" value="0">
+                <input type="number" id="point" placeholder="Point" value="0">
+                <button type="button" onclick="convertToGram()">Convert</button>
+            </form>
+            <p id="gramResult">0 Gram</p>
+            <p id="goldPriceResult">Total Gold Price: 0</p>
+        </div>
+
+        <!-- Gram to Vori, Ana, Roti, Point Converter -->
+        <div class="converter">
+            <h2>Gram to Vori, Ana, Roti, Point Converter</h2>
+            <form id="toVoriForm">
+                <input type="number" id="gram" placeholder="Gram" value="1">
+                <button type="button" onclick="convertToVori()">Convert</button>
+            </form>
+            <p id="voriResult">Vori: 0, Ana: 0, Roti:0, Point: 0</p>
+            <p id="goldPriceResultVori">Total Gold Price: 0</p>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <footer>
+        <a href="https://nosibbiswas22.github.io/nosibbiswas/"><p>&copy; 2024 Developed by Nosib Biswas. All rights reserved.</p></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
